@@ -56,6 +56,22 @@
 			path = SettingsScene;
 			sourceTree = "<group>";
 		};
+		B63D652827A1305100BA92FB /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				B63D651D27A12EAA00BA92FB /* SearchScene */,
+				B63D652227A12F8F00BA92FB /* SettingsScene */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		B63D652927A1307600BA92FB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		B667C78F27A12DBA00A6026A = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				B667C79B27A12DBA00A6026A /* Naver_Shopping_CartApp.swift */,
-				B63D651D27A12EAA00BA92FB /* SearchScene */,
-				B63D652227A12F8F00BA92FB /* SettingsScene */,
+				B63D652927A1307600BA92FB /* Service */,
+				B63D652827A1305100BA92FB /* Scene */,
 				B667C79F27A12DBD00A6026A /* Assets.xcassets */,
 				B667C7A127A12DBD00A6026A /* Preview Content */,
 			);
