@@ -12,73 +12,16 @@ struct SearchScene<Model>: View where Model: SearchSceneInterface {
     
     @StateObject var model: Model
     
-    @State private var newKeyword = ""
-    
-    
+
     var body: some View {
         
         NavigationView {
   
             List {
                 
-                Section("상품 키워드") {
-            
-                    ForEach(model.keywords, id: \.self) { item in
-                        Text(item)
-                    }
-                    .onDelete { indexSet in
-                        model.removeKeyword(at: indexSet)
-                    }
-                    
-                    HStack {
-                        Image(systemName: "plus").foregroundColor(Color.gray)
-                        Spacer()
-                        TextField("키워드 추가", text: $newKeyword)
-                        .onSubmit {
-                            model.addKeyword(with: newKeyword)
-                            newKeyword = ""
-                        }
-                        
-                    }
-                    
-                }
+                KeywordSection(model: model)
                 
-                Button(action: {
-                    Task { await model.search() }
-                }) {
-                    HStack {
-                        Spacer()
-                        Text("검색")
-                            .foregroundColor(Color.accentColor)
-                        Spacer()
-                    }
-                }
-                
-                
-                    
-                Section("쇼핑몰 추천 결과") {
-                    
-                    if model.malls.count > 0 {
-                    
-                        ForEach(model.malls, id: \.self) { item in
-                            
-                            Button(action: {
-
-                            }) {
-                                HStack {
-                                    Text(item)
-                                }
-                            }
-                            
-                        }
-                        
-                    }
-                    else {
-                        Text("추천 결과 없음")
-                            .foregroundColor(Color.gray)
-                    }
-                    
-                }
+                SearchResultSection(model: model)
 
             }
             .navigationTitle("🛒 네이버 쇼핑 카트")
