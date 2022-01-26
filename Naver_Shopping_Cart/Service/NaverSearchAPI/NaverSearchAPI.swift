@@ -8,8 +8,10 @@
 import Foundation
 
 
-protocol NaverSearchAPI {
+protocol NaverSearchAPI where NaverSearchResult: Decodable {
     
+    associatedtype NaverSearchResult
+
     var host: String { get }
     var path: String { get }
     var query: [String: String] { get }
@@ -17,14 +19,16 @@ protocol NaverSearchAPI {
     var clientId: String { get }
     var clientSecret: String { get }
     
-    var urlRequest: URLRequest? { get }
-    
+    func request() async throws -> NaverSearchResult?
+
 }
 
 
 extension NaverSearchAPI {
     
-    var urlRequest: URLRequest? {
+    var host: String { "https://openapi.naver.com/v1/search" }
+    
+    var urlRequest: URLRequest {
         
         var urlComponents = URLComponents(string: host + path)
         urlComponents?.queryItems = query.map { URLQueryItem(name: $0, value: $1) }
@@ -36,6 +40,14 @@ extension NaverSearchAPI {
         
         return request
         
+    }
+    
+    func request() async throws -> NaverSearchResult? {
+        
+        let (data, _) = try await URLSession.shared.data(for: urlRequest)
+        let jsonObject = try JSONDecoder().decode(NaverSearchResult.self, from: data)
+        
+        return jsonObject
     }
     
 }
