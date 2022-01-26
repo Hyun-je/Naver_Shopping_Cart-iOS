@@ -14,6 +14,7 @@
 		B63D652D27A130E500BA92FB /* NaverSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D652C27A130E500BA92FB /* NaverSearchAPI.swift */; };
 		B63D653027A1347300BA92FB /* NaverShopSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D652F27A1347300BA92FB /* NaverShopSearchResult.swift */; };
 		B63D653427A1547400BA92FB /* SettingsSceneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D653327A1547400BA92FB /* SettingsSceneModel.swift */; };
+		B63D653627A1556800BA92FB /* SearchSceneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D653527A1556800BA92FB /* SearchSceneModel.swift */; };
 		B667C79C27A12DBA00A6026A /* Naver_Shopping_CartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B667C79B27A12DBA00A6026A /* Naver_Shopping_CartApp.swift */; };
 		B667C7A027A12DBD00A6026A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B667C79F27A12DBD00A6026A /* Assets.xcassets */; };
 		B667C7A327A12DBD00A6026A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B667C7A227A12DBD00A6026A /* Preview Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		B63D652C27A130E500BA92FB /* NaverSearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverSearchAPI.swift; sourceTree = "<group>"; };
 		B63D652F27A1347300BA92FB /* NaverShopSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverShopSearchResult.swift; sourceTree = "<group>"; };
 		B63D653327A1547400BA92FB /* SettingsSceneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSceneModel.swift; sourceTree = "<group>"; };
+		B63D653527A1556800BA92FB /* SearchSceneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSceneModel.swift; sourceTree = "<group>"; };
 		B667C79827A12DBA00A6026A /* Naver_Shopping_Cart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Naver_Shopping_Cart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B667C79B27A12DBA00A6026A /* Naver_Shopping_CartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Naver_Shopping_CartApp.swift; sourceTree = "<group>"; };
 		B667C79F27A12DBD00A6026A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			children = (
 				B63D651E27A12EC700BA92FB /* SearchScene.swift */,
 				B63D652027A12ED400BA92FB /* SearchSceneInterface.swift */,
+				B63D653527A1556800BA92FB /* SearchSceneModel.swift */,
 			);
 			path = SearchScene;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B63D651F27A12EC700BA92FB /* SearchScene.swift in Sources */,
+				B63D653627A1556800BA92FB /* SearchSceneModel.swift in Sources */,
 				B63D652D27A130E500BA92FB /* NaverSearchAPI.swift in Sources */,
 				B63D652427A12FB900BA92FB /* SettingsScene.swift in Sources */,
 				B63D653427A1547400BA92FB /* SettingsSceneModel.swift in Sources */,
