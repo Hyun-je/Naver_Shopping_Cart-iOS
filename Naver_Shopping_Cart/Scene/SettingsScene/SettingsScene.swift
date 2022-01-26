@@ -36,7 +36,12 @@ struct SettingsScene<Model>: View where Model: SettingsSceneInterface {
                 }
                 
                 HStack {
-                    Button(action: {}) {
+                    Button(action: {
+                        
+                        let url = URL(string: "https://github.com/Hyun-je/Naver_Shopping_Cart-iOS")!
+                        UIApplication.shared.open(url)
+                        
+                    }) {
                         Text("GitHub 저장소")
                             .foregroundColor(Color.accentColor)
                     }
