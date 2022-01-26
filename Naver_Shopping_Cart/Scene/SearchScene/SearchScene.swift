@@ -94,7 +94,7 @@ struct SearchScene<Model>: View where Model: SearchSceneInterface {
                 leading:
                     EmptyView(),
                 trailing:
-                    NavigationLink(destination: EmptyView()) {
+                    NavigationLink(destination: SettingsScene(model: SettingsSceneModel())) {
                         Image(systemName: "gearshape")
                     }
             )
@@ -102,9 +102,5 @@ struct SearchScene<Model>: View where Model: SearchSceneInterface {
         }
     }
     
-    
-    func moveToSettings() {
-        
-    }
 }
 
