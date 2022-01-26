@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B63D651F27A12EC700BA92FB /* SearchScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D651E27A12EC700BA92FB /* SearchScene.swift */; };
-		B63D652127A12ED400BA92FB /* SearchSceneInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D652027A12ED400BA92FB /* SearchSceneInterface.swift */; };
 		B63D652427A12FB900BA92FB /* SettingsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D652327A12FB900BA92FB /* SettingsScene.swift */; };
-		B63D652627A12FC400BA92FB /* SettingsSceneInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D652527A12FC400BA92FB /* SettingsSceneInterface.swift */; };
 		B63D652D27A130E500BA92FB /* NaverSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D652C27A130E500BA92FB /* NaverSearchAPI.swift */; };
 		B63D653027A1347300BA92FB /* NaverShopSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D652F27A1347300BA92FB /* NaverShopSearchResult.swift */; };
 		B63D653427A1547400BA92FB /* SettingsSceneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D653327A1547400BA92FB /* SettingsSceneModel.swift */; };
@@ -25,9 +23,7 @@
 
 /* Begin PBXFileReference section */
 		B63D651E27A12EC700BA92FB /* SearchScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScene.swift; sourceTree = "<group>"; };
-		B63D652027A12ED400BA92FB /* SearchSceneInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSceneInterface.swift; sourceTree = "<group>"; };
 		B63D652327A12FB900BA92FB /* SettingsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScene.swift; sourceTree = "<group>"; };
-		B63D652527A12FC400BA92FB /* SettingsSceneInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSceneInterface.swift; sourceTree = "<group>"; };
 		B63D652C27A130E500BA92FB /* NaverSearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverSearchAPI.swift; sourceTree = "<group>"; };
 		B63D652F27A1347300BA92FB /* NaverShopSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverShopSearchResult.swift; sourceTree = "<group>"; };
 		B63D653327A1547400BA92FB /* SettingsSceneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSceneModel.swift; sourceTree = "<group>"; };
@@ -57,7 +53,6 @@
 			children = (
 				B653206E27A17C3D0084A7CD /* SubView */,
 				B63D651E27A12EC700BA92FB /* SearchScene.swift */,
-				B63D652027A12ED400BA92FB /* SearchSceneInterface.swift */,
 				B63D653527A1556800BA92FB /* SearchSceneModel.swift */,
 			);
 			path = SearchScene;
@@ -67,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				B63D652327A12FB900BA92FB /* SettingsScene.swift */,
-				B63D652527A12FC400BA92FB /* SettingsSceneInterface.swift */,
 				B63D653327A1547400BA92FB /* SettingsSceneModel.swift */,
 			);
 			path = SettingsScene;
@@ -233,8 +227,6 @@
 				B63D653427A1547400BA92FB /* SettingsSceneModel.swift in Sources */,
 				B667C79C27A12DBA00A6026A /* Naver_Shopping_CartApp.swift in Sources */,
 				B63D653027A1347300BA92FB /* NaverShopSearchResult.swift in Sources */,
-				B63D652127A12ED400BA92FB /* SearchSceneInterface.swift in Sources */,
-				B63D652627A12FC400BA92FB /* SettingsSceneInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

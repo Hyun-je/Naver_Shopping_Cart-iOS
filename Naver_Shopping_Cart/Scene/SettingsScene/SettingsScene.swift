@@ -7,6 +7,16 @@
 
 import SwiftUI
 
+
+protocol SettingsSceneInterface: ObservableObject {
+
+    var clientId: String { get set }
+    var clientSecret: String { get set }
+    var version: String { get }
+    
+}
+
+
 struct SettingsScene<Model>: View where Model: SettingsSceneInterface {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>

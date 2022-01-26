@@ -8,6 +8,13 @@
 import SwiftUI
 
 
+protocol SearchSceneInterface: KeywordSectionInterface, SearchResultSectionInterface {
+    
+    func search() async
+    
+}
+
+
 struct SearchScene<Model>: View where Model: SearchSceneInterface {
     
     @StateObject var model: Model
@@ -20,6 +27,17 @@ struct SearchScene<Model>: View where Model: SearchSceneInterface {
             List {
                 
                 KeywordSection(model: model)
+                
+                Button(action: {
+                    Task { await model.search() }
+                }) {
+                    HStack {
+                        Spacer()
+                        Text("검색")
+                            .foregroundColor(Color.accentColor)
+                        Spacer()
+                    }
+                }
                 
                 SearchResultSection(model: model)
 

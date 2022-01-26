@@ -7,7 +7,17 @@
 
 import SwiftUI
 
-struct KeywordSection<Model>: View where Model: SearchSceneInterface {
+protocol KeywordSectionInterface: ObservableObject {
+    
+    var keywords: [String] { get }
+    
+    func addKeyword(with keyword: String)
+    func removeKeyword(at indexSet: IndexSet)
+    
+}
+
+
+struct KeywordSection<Model>: View where Model: KeywordSectionInterface {
     
     @ObservedObject var model: Model
     
@@ -35,17 +45,6 @@ struct KeywordSection<Model>: View where Model: SearchSceneInterface {
                 
             }
             
-        }
-        
-        Button(action: {
-            Task { await model.search() }
-        }) {
-            HStack {
-                Spacer()
-                Text("검색")
-                    .foregroundColor(Color.accentColor)
-                Spacer()
-            }
         }
         
     }

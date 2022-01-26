@@ -7,7 +7,16 @@
 
 import SwiftUI
 
-struct SearchResultSection<Model>: View where Model: SearchSceneInterface {
+
+protocol SearchResultSectionInterface: ObservableObject {
+    
+    var malls: [String] { get }
+    var prices: [String] { get }
+    
+}
+
+
+struct SearchResultSection<Model>: View where Model: SearchResultSectionInterface {
     
     @ObservedObject var model: Model
     
