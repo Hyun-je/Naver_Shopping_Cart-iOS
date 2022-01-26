@@ -11,7 +11,7 @@ import SwiftUI
 struct Naver_Shopping_CartApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
         }
     }
 }
