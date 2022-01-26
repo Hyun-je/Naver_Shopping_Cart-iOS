@@ -28,22 +28,16 @@ extension NaverSearchAPI {
     
     var host: String { "https://openapi.naver.com/v1/search" }
     
-    var urlRequest: URLRequest {
+    func request() async throws -> NaverSearchResult? {
         
         var urlComponents = URLComponents(string: host + path)
         urlComponents?.queryItems = query.map { URLQueryItem(name: $0, value: $1) }
     
-        var request = URLRequest(url: urlComponents!.url!)
-        request.addValue("plain/text", forHTTPHeaderField: "Content-Type")
-        request.addValue(clientId, forHTTPHeaderField: "X-Naver-Client-Id")
-        request.addValue(clientSecret, forHTTPHeaderField: "X-Naver-Client-Secret")
-        
-        return request
-        
-    }
-    
-    func request() async throws -> NaverSearchResult? {
-        
+        var urlRequest = URLRequest(url: urlComponents!.url!)
+        urlRequest.addValue("plain/text", forHTTPHeaderField: "Content-Type")
+        urlRequest.addValue(clientId, forHTTPHeaderField: "X-Naver-Client-Id")
+        urlRequest.addValue(clientSecret, forHTTPHeaderField: "X-Naver-Client-Secret")
+
         let (data, _) = try await URLSession.shared.data(for: urlRequest)
         let jsonObject = try JSONDecoder().decode(NaverSearchResult.self, from: data)
         
