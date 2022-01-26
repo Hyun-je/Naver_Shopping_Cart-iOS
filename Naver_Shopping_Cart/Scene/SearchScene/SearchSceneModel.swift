@@ -16,12 +16,7 @@ class SearchSceneModel: SearchSceneInterface {
     @Published var prices = [String]()
     
     
-    
-    init() {
-        
-    }
-    
-    
+
     func addKeyword(with keyword: String) {
         keywords.append(keyword)
     }
@@ -32,6 +27,23 @@ class SearchSceneModel: SearchSceneInterface {
     
     func search() async {
         
+        guard var service = NaverShopSearch()
+        else { return }
+        
+        for keyword in keywords {
+            
+            service.query = keyword
+            
+            if let result = try? await service.request() {
+                
+                print(result.items)
+  
+            }
+
+        }
+
+        
     }
+
     
 }

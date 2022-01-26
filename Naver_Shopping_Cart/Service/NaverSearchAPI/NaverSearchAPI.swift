@@ -14,7 +14,7 @@ protocol NaverSearchAPI where NaverSearchResult: Decodable {
 
     var host: String { get }
     var path: String { get }
-    var query: [String: String] { get }
+    var queryItems: [String: String] { get }
     
     var clientId: String { get }
     var clientSecret: String { get }
@@ -31,7 +31,7 @@ extension NaverSearchAPI {
     func request() async throws -> NaverSearchResult? {
         
         var urlComponents = URLComponents(string: host + path)
-        urlComponents?.queryItems = query.map { URLQueryItem(name: $0, value: $1) }
+        urlComponents?.queryItems = queryItems.map { URLQueryItem(name: $0, value: $1) }
     
         var urlRequest = URLRequest(url: urlComponents!.url!)
         urlRequest.addValue("plain/text", forHTTPHeaderField: "Content-Type")
