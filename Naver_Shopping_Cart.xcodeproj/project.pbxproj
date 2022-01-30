@@ -9,32 +9,38 @@
 /* Begin PBXBuildFile section */
 		B63D651F27A12EC700BA92FB /* SearchScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D651E27A12EC700BA92FB /* SearchScene.swift */; };
 		B63D652427A12FB900BA92FB /* SettingsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D652327A12FB900BA92FB /* SettingsScene.swift */; };
-		B63D652D27A130E500BA92FB /* NaverSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D652C27A130E500BA92FB /* NaverSearchAPI.swift */; };
 		B63D653027A1347300BA92FB /* NaverShopSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D652F27A1347300BA92FB /* NaverShopSearchResult.swift */; };
 		B63D653427A1547400BA92FB /* SettingsSceneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D653327A1547400BA92FB /* SettingsSceneModel.swift */; };
 		B63D653627A1556800BA92FB /* SearchSceneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D653527A1556800BA92FB /* SearchSceneModel.swift */; };
-		B63D653927A16A8700BA92FB /* NaverShopSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D653827A16A8700BA92FB /* NaverShopSearch.swift */; };
 		B653207027A17C580084A7CD /* KeywordSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B653206F27A17C580084A7CD /* KeywordSection.swift */; };
 		B653207227A17C620084A7CD /* SearchResultSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B653207127A17C620084A7CD /* SearchResultSection.swift */; };
 		B667C79C27A12DBA00A6026A /* Naver_Shopping_CartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B667C79B27A12DBA00A6026A /* Naver_Shopping_CartApp.swift */; };
 		B667C7A027A12DBD00A6026A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B667C79F27A12DBD00A6026A /* Assets.xcassets */; };
 		B667C7A327A12DBD00A6026A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B667C7A227A12DBD00A6026A /* Preview Assets.xcassets */; };
+		B684BD0527A5348800696686 /* NaverSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684BD0427A5348800696686 /* NaverSearchService.swift */; };
+		B684BD0727A534A000696686 /* NaverShopSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684BD0627A534A000696686 /* NaverShopSearch.swift */; };
+		B684BD1027A6890E00696686 /* NaverMovieSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684BD0F27A6890E00696686 /* NaverMovieSearch.swift */; };
+		B684BD1427A6898500696686 /* NaverMovieSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684BD1327A6898500696686 /* NaverMovieSearchResult.swift */; };
+		B684BD1627A69F4300696686 /* AnyNaverSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684BD1527A69F4300696686 /* AnyNaverSearchService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B63D651E27A12EC700BA92FB /* SearchScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScene.swift; sourceTree = "<group>"; };
 		B63D652327A12FB900BA92FB /* SettingsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScene.swift; sourceTree = "<group>"; };
-		B63D652C27A130E500BA92FB /* NaverSearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverSearchAPI.swift; sourceTree = "<group>"; };
 		B63D652F27A1347300BA92FB /* NaverShopSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverShopSearchResult.swift; sourceTree = "<group>"; };
 		B63D653327A1547400BA92FB /* SettingsSceneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSceneModel.swift; sourceTree = "<group>"; };
 		B63D653527A1556800BA92FB /* SearchSceneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSceneModel.swift; sourceTree = "<group>"; };
-		B63D653827A16A8700BA92FB /* NaverShopSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverShopSearch.swift; sourceTree = "<group>"; };
 		B653206F27A17C580084A7CD /* KeywordSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordSection.swift; sourceTree = "<group>"; };
 		B653207127A17C620084A7CD /* SearchResultSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultSection.swift; sourceTree = "<group>"; };
 		B667C79827A12DBA00A6026A /* Naver_Shopping_Cart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Naver_Shopping_Cart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B667C79B27A12DBA00A6026A /* Naver_Shopping_CartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Naver_Shopping_CartApp.swift; sourceTree = "<group>"; };
 		B667C79F27A12DBD00A6026A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B667C7A227A12DBD00A6026A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B684BD0427A5348800696686 /* NaverSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverSearchService.swift; sourceTree = "<group>"; };
+		B684BD0627A534A000696686 /* NaverShopSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverShopSearch.swift; sourceTree = "<group>"; };
+		B684BD0F27A6890E00696686 /* NaverMovieSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMovieSearch.swift; sourceTree = "<group>"; };
+		B684BD1327A6898500696686 /* NaverMovieSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMovieSearchResult.swift; sourceTree = "<group>"; };
+		B684BD1527A69F4300696686 /* AnyNaverSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyNaverSearchService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,27 +85,9 @@
 		B63D652927A1307600BA92FB /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				B63D652A27A130AD00BA92FB /* NaverSearchAPI */,
+				B684BD0E27A5387F00696686 /* NaverSearchService */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		B63D652A27A130AD00BA92FB /* NaverSearchAPI */ = {
-			isa = PBXGroup;
-			children = (
-				B63D652C27A130E500BA92FB /* NaverSearchAPI.swift */,
-				B63D653A27A16BA300BA92FB /* NaverShopSearch */,
-			);
-			path = NaverSearchAPI;
-			sourceTree = "<group>";
-		};
-		B63D653A27A16BA300BA92FB /* NaverShopSearch */ = {
-			isa = PBXGroup;
-			children = (
-				B63D653827A16A8700BA92FB /* NaverShopSearch.swift */,
-				B63D652F27A1347300BA92FB /* NaverShopSearchResult.swift */,
-			);
-			path = NaverShopSearch;
 			sourceTree = "<group>";
 		};
 		B653206E27A17C3D0084A7CD /* SubView */ = {
@@ -145,6 +133,35 @@
 				B667C7A227A12DBD00A6026A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B684BD0E27A5387F00696686 /* NaverSearchService */ = {
+			isa = PBXGroup;
+			children = (
+				B684BD0427A5348800696686 /* NaverSearchService.swift */,
+				B684BD1527A69F4300696686 /* AnyNaverSearchService.swift */,
+				B684BD1127A6896C00696686 /* Service */,
+				B684BD1227A6897100696686 /* Result */,
+			);
+			path = NaverSearchService;
+			sourceTree = "<group>";
+		};
+		B684BD1127A6896C00696686 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B684BD0627A534A000696686 /* NaverShopSearch.swift */,
+				B684BD0F27A6890E00696686 /* NaverMovieSearch.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B684BD1227A6897100696686 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				B63D652F27A1347300BA92FB /* NaverShopSearchResult.swift */,
+				B684BD1327A6898500696686 /* NaverMovieSearchResult.swift */,
+			);
+			path = Result;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,13 +237,16 @@
 				B653207227A17C620084A7CD /* SearchResultSection.swift in Sources */,
 				B63D651F27A12EC700BA92FB /* SearchScene.swift in Sources */,
 				B63D653627A1556800BA92FB /* SearchSceneModel.swift in Sources */,
-				B63D652D27A130E500BA92FB /* NaverSearchAPI.swift in Sources */,
+				B684BD1427A6898500696686 /* NaverMovieSearchResult.swift in Sources */,
+				B684BD1027A6890E00696686 /* NaverMovieSearch.swift in Sources */,
+				B684BD0727A534A000696686 /* NaverShopSearch.swift in Sources */,
 				B63D652427A12FB900BA92FB /* SettingsScene.swift in Sources */,
-				B63D653927A16A8700BA92FB /* NaverShopSearch.swift in Sources */,
 				B653207027A17C580084A7CD /* KeywordSection.swift in Sources */,
 				B63D653427A1547400BA92FB /* SettingsSceneModel.swift in Sources */,
 				B667C79C27A12DBA00A6026A /* Naver_Shopping_CartApp.swift in Sources */,
 				B63D653027A1347300BA92FB /* NaverShopSearchResult.swift in Sources */,
+				B684BD0527A5348800696686 /* NaverSearchService.swift in Sources */,
+				B684BD1627A69F4300696686 /* AnyNaverSearchService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
