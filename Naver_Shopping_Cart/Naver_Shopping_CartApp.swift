@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Naver_Shopping_CartApp: App {
+struct NaverShoppingCartApp: App {
     var body: some Scene {
         WindowGroup {
             SearchScene(model: SearchSceneModel(searchService: NaverShopSearch().eraseType()))

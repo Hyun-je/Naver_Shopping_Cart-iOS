@@ -7,38 +7,36 @@
 
 import SwiftUI
 
-
 protocol SearchSceneInterface: KeywordSectionInterface, SearchResultSectionInterface {
-    
+
     func search() async
-    
+
 }
 
-
 struct SearchScene<Model>: View where Model: SearchSceneInterface {
-    
+
     @StateObject var model: Model
-    
 
     var body: some View {
-        
+
         NavigationView {
-  
+
             List {
-                
+
                 KeywordSection(model: model)
-                
-                Button(action: {
-                    Task { await model.search() }
-                }) {
-                    HStack {
-                        Spacer()
-                        Text("검색")
-                            .foregroundColor(Color.accentColor)
-                        Spacer()
+
+                Button(
+                    action: { },
+                    label: {
+                        HStack {
+                            Spacer()
+                            Text("검색")
+                                .foregroundColor(Color.accentColor)
+                            Spacer()
+                        }
                     }
-                }
-                
+                )
+
                 SearchResultSection(model: model)
 
             }
@@ -51,9 +49,8 @@ struct SearchScene<Model>: View where Model: SearchSceneInterface {
                         Image(systemName: "gearshape")
                     }
             )
-            
+
         }
     }
-    
-}
 
+}

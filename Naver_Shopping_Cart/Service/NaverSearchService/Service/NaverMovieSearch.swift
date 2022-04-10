@@ -7,11 +7,10 @@
 
 import Foundation
 
-
 class NaverMovieSearch: NaverSearchService {
- 
+
     typealias SearchResult = NaverMovieSearchResult
-    
+
     let path: String = "/movie"
-    
+
 }

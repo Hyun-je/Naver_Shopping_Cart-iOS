@@ -8,32 +8,31 @@
 import SwiftUI
 
 protocol KeywordSectionInterface: ObservableObject {
-    
+
     var keywords: [String] { get }
-    
+
     func addKeyword(with keyword: String)
     func removeKeyword(at indexSet: IndexSet)
-    
+
 }
 
-
 struct KeywordSection<Model>: View where Model: KeywordSectionInterface {
-    
+
     @ObservedObject var model: Model
-    
+
     @State private var newKeyword = ""
-    
+
     var body: some View {
-        
+
         Section("상품 키워드") {
-    
+
             ForEach(model.keywords, id: \.self) { item in
                 Text(item)
             }
             .onDelete { indexSet in
                 model.removeKeyword(at: indexSet)
             }
-            
+
             HStack {
                 Image(systemName: "plus").foregroundColor(Color.gray)
                 Spacer()
@@ -42,10 +41,10 @@ struct KeywordSection<Model>: View where Model: KeywordSectionInterface {
                     model.addKeyword(with: newKeyword)
                     newKeyword = ""
                 }
-                
+
             }
-            
+
         }
-        
+
     }
 }

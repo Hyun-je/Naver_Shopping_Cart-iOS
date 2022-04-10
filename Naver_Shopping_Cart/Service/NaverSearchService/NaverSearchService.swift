@@ -7,14 +7,13 @@
 
 import Foundation
 
-
 protocol NaverSearchService where SearchResult: Decodable {
-    
+
     associatedtype SearchResult
-    
+
     var host: String { get }
     var path: String { get }
-    
+
     var clientId: String { get }
     var clientSecret: String { get }
 
@@ -23,9 +22,9 @@ protocol NaverSearchService where SearchResult: Decodable {
 }
 
 extension NaverSearchService {
-    
+
     var host: String { "https://openapi.naver.com/v1/search" }
-    
+
     var clientId: String { UserDefaults.standard.string(forKey: "clientId") ?? "" }
     var clientSecret: String { UserDefaults.standard.string(forKey: "clientSecret") ?? "" }
 
@@ -43,8 +42,8 @@ extension NaverSearchService {
 
         let (data, _) = try await URLSession.shared.data(for: urlRequest)
         let jsonObject = try JSONDecoder().decode(SearchResult.self, from: data)
-        
+
         return jsonObject
     }
-    
+
 }

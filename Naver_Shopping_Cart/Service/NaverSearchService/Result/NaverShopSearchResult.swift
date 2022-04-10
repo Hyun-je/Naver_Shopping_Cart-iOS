@@ -7,18 +7,16 @@
 
 import Foundation
 
-
 struct NaverShopSearchResult: Decodable {
-    
+
     let lastBuildDate: String
     let total: Int
     let start: Int
     let display: Int
     let items: [Item]
-    
-    
+
     struct Item: Decodable {
-        
+
         let title: String
         let link: String
         let image: String
@@ -33,7 +31,7 @@ struct NaverShopSearchResult: Decodable {
         let category2: String
         let category3: String
         let category4: String
-        
+
     }
-    
+
 }

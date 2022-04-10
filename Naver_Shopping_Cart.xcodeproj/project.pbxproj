@@ -22,7 +22,31 @@
 		B684BD1027A6890E00696686 /* NaverMovieSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684BD0F27A6890E00696686 /* NaverMovieSearch.swift */; };
 		B684BD1427A6898500696686 /* NaverMovieSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684BD1327A6898500696686 /* NaverMovieSearchResult.swift */; };
 		B684BD1627A69F4300696686 /* AnyNaverSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684BD1527A69F4300696686 /* AnyNaverSearchService.swift */; };
+		B684BD2527A7EA3B00696686 /* SearchSceneModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684BD2427A7EA3B00696686 /* SearchSceneModelTest.swift */; };
+		B684BD2627A7EB2200696686 /* NaverSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684BD0427A5348800696686 /* NaverSearchService.swift */; };
+		B684BD2727A7EB2500696686 /* AnyNaverSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684BD1527A69F4300696686 /* AnyNaverSearchService.swift */; };
+		B684BD2827A7EB2900696686 /* NaverShopSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684BD0627A534A000696686 /* NaverShopSearch.swift */; };
+		B684BD2927A7EB2B00696686 /* NaverMovieSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684BD0F27A6890E00696686 /* NaverMovieSearch.swift */; };
+		B684BD2A27A7EB2E00696686 /* NaverShopSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D652F27A1347300BA92FB /* NaverShopSearchResult.swift */; };
+		B684BD2B27A7EB3100696686 /* NaverMovieSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684BD1327A6898500696686 /* NaverMovieSearchResult.swift */; };
+		B684BD2C27A7EB3800696686 /* KeywordSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B653206F27A17C580084A7CD /* KeywordSection.swift */; };
+		B684BD2D27A7EB3A00696686 /* SearchResultSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B653207127A17C620084A7CD /* SearchResultSection.swift */; };
+		B684BD2E27A7EB3D00696686 /* SearchScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D651E27A12EC700BA92FB /* SearchScene.swift */; };
+		B684BD2F27A7EB3F00696686 /* SearchSceneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D653527A1556800BA92FB /* SearchSceneModel.swift */; };
+		B684BD3027A7EB4300696686 /* SettingsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D652327A12FB900BA92FB /* SettingsScene.swift */; };
+		B684BD3127A7EB4600696686 /* SettingsSceneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D653327A1547400BA92FB /* SettingsSceneModel.swift */; };
+		B684BD3327A7ED8B00696686 /* SettingsSceneModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684BD3227A7ED8B00696686 /* SettingsSceneModelTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B684BD1F27A7EA0800696686 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B667C79027A12DBA00A6026A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B667C79727A12DBA00A6026A;
+			remoteInfo = Naver_Shopping_Cart;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B63D651E27A12EC700BA92FB /* SearchScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScene.swift; sourceTree = "<group>"; };
@@ -41,10 +65,20 @@
 		B684BD0F27A6890E00696686 /* NaverMovieSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMovieSearch.swift; sourceTree = "<group>"; };
 		B684BD1327A6898500696686 /* NaverMovieSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMovieSearchResult.swift; sourceTree = "<group>"; };
 		B684BD1527A69F4300696686 /* AnyNaverSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyNaverSearchService.swift; sourceTree = "<group>"; };
+		B684BD1B27A7EA0800696686 /* Naver_Shopping_Cart_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Naver_Shopping_Cart_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B684BD2427A7EA3B00696686 /* SearchSceneModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSceneModelTest.swift; sourceTree = "<group>"; };
+		B684BD3227A7ED8B00696686 /* SettingsSceneModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSceneModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B667C79527A12DBA00A6026A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B684BD1827A7EA0800696686 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -103,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				B667C79A27A12DBA00A6026A /* Naver_Shopping_Cart */,
+				B684BD1C27A7EA0800696686 /* Naver_Shopping_Cart_Tests */,
 				B667C79927A12DBA00A6026A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				B667C79827A12DBA00A6026A /* Naver_Shopping_Cart.app */,
+				B684BD1B27A7EA0800696686 /* Naver_Shopping_Cart_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,6 +200,15 @@
 			path = Result;
 			sourceTree = "<group>";
 		};
+		B684BD1C27A7EA0800696686 /* Naver_Shopping_Cart_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B684BD2427A7EA3B00696686 /* SearchSceneModelTest.swift */,
+				B684BD3227A7ED8B00696686 /* SettingsSceneModelTest.swift */,
+			);
+			path = Naver_Shopping_Cart_Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,6 +219,7 @@
 				B667C79427A12DBA00A6026A /* Sources */,
 				B667C79527A12DBA00A6026A /* Frameworks */,
 				B667C79627A12DBA00A6026A /* Resources */,
+				B63CBEF027AABCD4000D5DF7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -183,6 +229,24 @@
 			productName = Naver_Shopping_Cart;
 			productReference = B667C79827A12DBA00A6026A /* Naver_Shopping_Cart.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B684BD1A27A7EA0800696686 /* Naver_Shopping_Cart_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B684BD2127A7EA0800696686 /* Build configuration list for PBXNativeTarget "Naver_Shopping_Cart_Tests" */;
+			buildPhases = (
+				B684BD1727A7EA0800696686 /* Sources */,
+				B684BD1827A7EA0800696686 /* Frameworks */,
+				B684BD1927A7EA0800696686 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B684BD2027A7EA0800696686 /* PBXTargetDependency */,
+			);
+			name = Naver_Shopping_Cart_Tests;
+			productName = Naver_Shopping_Cart_Tests;
+			productReference = B684BD1B27A7EA0800696686 /* Naver_Shopping_Cart_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -196,6 +260,10 @@
 				TargetAttributes = {
 					B667C79727A12DBA00A6026A = {
 						CreatedOnToolsVersion = 13.2;
+					};
+					B684BD1A27A7EA0800696686 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = B667C79727A12DBA00A6026A;
 					};
 				};
 			};
@@ -213,6 +281,7 @@
 			projectRoot = "";
 			targets = (
 				B667C79727A12DBA00A6026A /* Naver_Shopping_Cart */,
+				B684BD1A27A7EA0800696686 /* Naver_Shopping_Cart_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -227,7 +296,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B684BD1927A7EA0800696686 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B63CBEF027AABCD4000D5DF7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B667C79427A12DBA00A6026A /* Sources */ = {
@@ -250,7 +346,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B684BD1727A7EA0800696686 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B684BD2B27A7EB3100696686 /* NaverMovieSearchResult.swift in Sources */,
+				B684BD2C27A7EB3800696686 /* KeywordSection.swift in Sources */,
+				B684BD2D27A7EB3A00696686 /* SearchResultSection.swift in Sources */,
+				B684BD2527A7EA3B00696686 /* SearchSceneModelTest.swift in Sources */,
+				B684BD2727A7EB2500696686 /* AnyNaverSearchService.swift in Sources */,
+				B684BD2627A7EB2200696686 /* NaverSearchService.swift in Sources */,
+				B684BD3027A7EB4300696686 /* SettingsScene.swift in Sources */,
+				B684BD2E27A7EB3D00696686 /* SearchScene.swift in Sources */,
+				B684BD2A27A7EB2E00696686 /* NaverShopSearchResult.swift in Sources */,
+				B684BD3327A7ED8B00696686 /* SettingsSceneModelTest.swift in Sources */,
+				B684BD2827A7EB2900696686 /* NaverShopSearch.swift in Sources */,
+				B684BD3127A7EB4600696686 /* SettingsSceneModel.swift in Sources */,
+				B684BD2F27A7EB3F00696686 /* SearchSceneModel.swift in Sources */,
+				B684BD2927A7EB2B00696686 /* NaverMovieSearch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B684BD2027A7EA0800696686 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B667C79727A12DBA00A6026A /* Naver_Shopping_Cart */;
+			targetProxy = B684BD1F27A7EA0800696686 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B667C7A427A12DBD00A6026A /* Debug */ = {
@@ -427,6 +552,42 @@
 			};
 			name = Release;
 		};
+		B684BD2227A7EA0800696686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4WECBB963;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JaehyeonPark.Naver-Shopping-Cart-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Naver_Shopping_Cart.app/Naver_Shopping_Cart";
+			};
+			name = Debug;
+		};
+		B684BD2327A7EA0800696686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4WECBB963;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JaehyeonPark.Naver-Shopping-Cart-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Naver_Shopping_Cart.app/Naver_Shopping_Cart";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -444,6 +605,15 @@
 			buildConfigurations = (
 				B667C7A727A12DBD00A6026A /* Debug */,
 				B667C7A827A12DBD00A6026A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B684BD2127A7EA0800696686 /* Build configuration list for PBXNativeTarget "Naver_Shopping_Cart_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B684BD2227A7EA0800696686 /* Debug */,
+				B684BD2327A7EA0800696686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

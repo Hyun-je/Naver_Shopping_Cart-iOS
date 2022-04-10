@@ -7,11 +7,10 @@
 
 import Foundation
 
-
 class NaverShopSearch: NaverSearchService {
- 
+
     typealias SearchResult = NaverShopSearchResult
-    
+
     let path: String = "/shop"
-    
+
 }

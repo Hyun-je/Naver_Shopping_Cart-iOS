@@ -7,15 +7,13 @@
 
 import Foundation
 
-
 struct NaverMovieSearchResult: Decodable {
 
     let lastBuildDate: String
     let items: [Item]
-    
-    
+
     struct Item: Decodable {
-        
+
         let title: String
         let link: String
         let image: String
@@ -24,7 +22,7 @@ struct NaverMovieSearchResult: Decodable {
         let director: String
         let actor: String
         let userRating: String
-        
+
     }
-    
+
 }
